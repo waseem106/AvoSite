@@ -1,0 +1,95 @@
+.RecentBlog{
+    width: 100%;
+    height: 100%;
+    padding:25% 15% 10% 15% ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f3f3;
+    position: relative;
+    
+}
+
+.RecentBlog::after{
+    content: '';
+    width: 35%;
+    height: 90px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: matrix(1, -0.19, 0, 2, 0, 0);
+}
+
+.RecentBlog::before{
+    content: '';
+    width: 65%;
+    height: 90px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    transform: matrix(1, 0.102, 0, 2, 0, 0);
+    top: 0;
+    right:  0;
+}
+
+
+.RecentBlog h3
+{
+    font-weight: 700;
+
+}
+
+
+.recentblogcards{
+    padding-top: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.BlogCard{
+    width: 19rem;
+    padding: 0;
+    margin: 0;
+    background-color: #f3f3f3;
+}
+
+.flexblogcard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.flexblogcard .card-text{
+    font-size: 12px;
+}
+
+
+@media(max-width:600px)
+{
+    .RecentBlog{
+        padding:45% 1% 40% 1% ;
+    }
+
+
+    .recentblogcards{
+        padding-top: 0%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .BlogCard{
+       width: 100%;
+    }
+    .flexblogcard .card-text{
+        font-size: 16px;
+    }
+   
+
+
+}
+

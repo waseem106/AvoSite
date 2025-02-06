@@ -1,0 +1,53 @@
+.client {
+  padding-top: 10%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.client h1 {
+  font-weight: 700;
+  font-size: 38px;
+}
+.client-cards-area {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.customer-card {
+  width: 16rem;
+  background-color: #f3f3f3;
+  margin-top: 6%;
+  padding: 1%;
+  position: relative;
+}
+
+
+
+@media (max-width:600px)
+{
+  
+  .client{
+    padding-top: 17%;
+  }
+
+
+.client h1 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+
+.customer-card {
+width: 100%;
+margin-left: 2%;
+margin-right: 2%;
+}
+
+}

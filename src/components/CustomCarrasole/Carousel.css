@@ -1,0 +1,198 @@
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  
+}
+
+
+.carousel-container::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 10%;
+  width: 65%; 
+  height: 60px; 
+  background-color: rgb(255, 255, 255); 
+  z-index: 1; 
+  transform: matrix(1, 0.102, 0, 2, 0, 0); 
+  transform-origin: bottom left; 
+  
+  overflow: hidden;
+}
+
+
+.carousel-container::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+  width: 35%; 
+  height: 60px; 
+  background-color: rgb(255, 255, 255); 
+  z-index: 1; 
+  transform: matrix(1, -0.19, 0, 2, 0, 0); 
+  transform-origin: bottom right; 
+  overflow: hidden;
+}
+
+.carasole {
+  width: 100%;
+  height: 100%; 
+}
+
+.carousel-item {
+  height: 100%; 
+}
+
+.carousel-image {
+  width: 100%;
+  height: 500px; 
+  object-fit: cover; 
+}
+
+/* .header {
+  position: absolute;
+  width: 100%;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 10;
+} */
+
+.header {
+  position: absolute; 
+  width: 100%;
+  top: 20px; 
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 10;
+  background-color: transparent; 
+  transition: background-color 0.3s ease; 
+}
+
+.sticky {
+  position: fixed;
+  top: 0; 
+  background-color: white; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+
+.content {
+  padding: 0 14%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  position: absolute;
+  top: 20%;
+  z-index: 10; 
+  
+}
+
+.left {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  
+}
+
+.left h1{
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.right {
+  width: 15%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+
+.playbuttton{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  padding:20px;
+  border-radius: 50% 50%;
+  border: 2px solid  #D1002C;
+  background-color: #D1002C;
+  font-size: 19px;
+  color: black;
+  position: absolute;
+  top: 70%;
+  left: 60%;
+}
+
+.playbuttton a{
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width:600px) {
+
+
+    .header {
+      background-color: black;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      z-index: 20;
+    }
+  
+
+  .content{
+    padding: 0 7%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* justify-content: left; */
+    align-items: flex-start;
+  }
+
+  .right{
+    padding-top: 20px;
+    width: 100%;
+    align-items: flex-start;
+    order: 1;
+  }
+  .left{
+    width: 100%;
+    text-align: left;
+    order: 2;
+  }
+  .carousel-container::before {
+    bottom: -13%;
+      /* background-color: red; */
+      transform: matrix(1, 0.102, 0, 2, 0, 0);
+    
+  }
+  .carousel-container::after {
+    bottom: -13%;
+    transform: matrix(1, -0.19, 0, 2, 0, 0); 
+}
+.playbuttton{
+  top: 85%;
+}
+.carasole {
+
+  height: 100vh; 
+}
+  
+.carousel-image {
+  height: 110vh;
+
+}
+
+}

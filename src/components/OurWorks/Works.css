@@ -1,0 +1,188 @@
+.works{
+    width: 100%;
+    height: 100%;
+    background-color: #F3F3F3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 15%;
+}
+
+
+.works::before{
+    content: '';
+    width: 35%;
+    height: 100px;
+    transform: matrix(1, -0.19, 0, 2, 0, 0);
+    background-color:white;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.works::after{
+    content: '';
+    width: 65%;
+    height: 100px;
+    transform: matrix(1, 0.102, 0, 2, 0, 0);
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.bootom{
+    margin-top: 10%;
+}
+/* for bottom  */
+.works .bootom::before{
+    content: '';
+    width: 65%;
+    height: 100px;
+    transform: matrix(1, 0.102, 0, 2, 0, 0);
+    background-color:white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+.works .bootom::after{
+    content: '';
+    width: 35%;
+    height: 100px;
+    transform: matrix(1, -0.19, 0, 2, 0, 0);
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+.works-content{
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: black;
+    /* outline: 1px solid black; */
+    background-color: #F3F3F3;
+    
+}
+
+.works-content h2{
+    font-weight: 700;
+}
+
+.works-cards{
+    background-color: #F3F3F3;
+    margin-top: 30px;
+    /* border: 1px solid rgb(223, 39, 39); */
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    gap: 40px;
+}
+
+.works-cards img{
+    width: 40%;
+    height: auto;
+}
+.works-cards .card{
+    width: 50%;
+    height: auto;
+    align-items: start;
+    /* border: 1px solid black; */
+    background-color: #F3F3F3;
+
+}
+.works-cards .card h4{
+    font-size: 10px;
+    letter-spacing: 2px;
+    
+}
+.works-cards .card p{
+    color: #808080;
+}
+
+
+
+.works-cards .card Button {
+    background-color: #F3F3F3;
+    text-transform: uppercase;
+    color:black;
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    border: 1px solid #808080;
+    border-radius: 3px;
+}
+
+
+.cardinner{
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+}
+
+
+.cardinner img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+
+@media (max-width:600px)
+{
+
+    .works-content{
+        padding-top: 100px;
+        margin-left: 3%;
+        margin-right: 3%;
+        /* margin-top: 20%; */
+    }
+
+
+    .works-cards{
+        margin-top: 100px;
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 100px;
+    }
+
+    .works-cards .card{
+        width: 100%;
+       
+    
+    }
+
+    .works-cards img{
+        width: 100%;
+        height: 400px;
+    }
+
+    .cardinner img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    
+    }
+
+    .works-cards .card-image {
+        order: 1;
+    }
+    .works-cards .card {
+        order: 2;
+    }
+
+}
