@@ -1,0 +1,111 @@
+.TeamCard{
+    background-color: #f3f3f3;
+    width: 13rem;
+    height: 100%;
+    margin-top: 15%;
+    /* position: relative; */
+
+}
+
+.TeamCard:hover .card-title{
+    color: #D1002C;
+    transition: color 0.9s ease;
+}
+
+
+
+
+.TeamCard img {
+    width: 100%; 
+    height: 280px; 
+}
+
+.TeamCard .card-title {
+    font-size: 20px; 
+    font-weight: bold; 
+    margin: 10px 0;
+    text-transform: uppercase;
+
+}
+
+.TeamCard .card-text {
+    font-size: 12px; 
+    color:#D1002C;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+
+.team-social-icons{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    top:12%;
+    left: 6%;
+    color: #D1002C;
+    z-index: 99;
+    /* background-color: #f3f3f3; */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.9s ease ,visibility 0.9s ease;
+    font-size: 9px;
+}
+
+.iconshover:hover .team-social-icons
+{
+
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.iconshover{
+    position: relative;
+}
+
+
+.icons-circle{
+    width: 12px;
+    height: 12px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 9px;
+}
+
+.icons-circle:hover{
+    background-color:#D1002C;;
+    color: white;
+    cursor: pointer;
+}
+
+
+@media (max-width:600px)
+{
+
+    .TeamCard{
+        
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .TeamCard img {
+        width: 100%; 
+        height: 350px; 
+    }
+
+    .icons-circle{
+        width: 15px;
+        height: 16px;
+        padding: 10px;
+        background-color: white;
+        border-radius: 50%;
+        font-size: 10px;
+    }
+
+    .team-social-icons{
+        top: 5%;
+    }
+}

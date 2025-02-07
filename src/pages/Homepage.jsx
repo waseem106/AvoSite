@@ -12,7 +12,7 @@ import Footer from '../components/Footer/Footer'
 const Homepage = () => {
   return (
     <div>
-      <CustomCarousel/>
+      <CustomCarousel homecolor={'#D1002C'}/>
       <About/>
       <Welcome/>
       <Works/>

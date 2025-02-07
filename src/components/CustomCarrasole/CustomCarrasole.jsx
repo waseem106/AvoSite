@@ -10,7 +10,7 @@ import { faPlay } from "@fortawesome/free-solid-svg-icons";
 
 const images = [{ image: image1 }, { image: image2 }];
 
-const CustomCarousel = () => {
+const CustomCarousel = ({homecolor}) => {
   const [isSticky, setIsSticky] = useState(false); 
 
   useEffect(() => {
@@ -34,9 +34,8 @@ const CustomCarousel = () => {
 
   return (
     <div className="carousel-container">
-      {/* <div className="header"> */}
       <div className={`header ${isSticky ? 'sticky' : ''}`}>
-        <NavbarTop isSticky={isSticky} /> 
+        <NavbarTop isSticky={isSticky} homecolor={homecolor} /> 
       </div>
 
       <div className="carasole">
